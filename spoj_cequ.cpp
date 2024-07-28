@@ -14,6 +14,12 @@ typedef vector<ll> vll;
 typedef vector<ull> vull;
 
 void solve(){
+    int a,b,c;
+    cin>>a>>b>>c;
+    int g = __gcd(a,b);
+    if(c%g==0)  cout<<"Yes"<<endl;
+    else cout<<"No"<<endl;
+
 }
 
 int main(){
@@ -21,9 +27,9 @@ int main(){
     cin.tie(NULL);
     cout.tie(NULL);
     int t = 1;
-    // cin>>t;
+    cin>>t;
     FOR(i,0,t){
-
+        cout<<"Case "<<i+1<<": ";
         solve();
     } 
 }
